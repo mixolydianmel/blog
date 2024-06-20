@@ -2,21 +2,21 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/blog/posts/about-the-author/</loc>
+    <loc>https://mixolydianmel.github.io/blog/posts/about-the-author/</loc>
     <lastmod>2024-06-20T16:15:13-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/categories/</loc>
+    <loc>https://mixolydianmel.github.io/blog/categories/</loc>
     <lastmod>2024-06-20T16:15:13-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/</loc>
+    <loc>https://mixolydianmel.github.io/blog/</loc>
     <lastmod>2024-06-20T16:15:13-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/categories/personal/</loc>
+    <loc>https://mixolydianmel.github.io/blog/categories/personal/</loc>
     <lastmod>2024-06-20T16:15:13-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/posts/</loc>
+    <loc>https://mixolydianmel.github.io/blog/posts/</loc>
     <lastmod>2024-06-20T16:15:13-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/tags/</loc>
+    <loc>https://mixolydianmel.github.io/blog/tags/</loc>
   </url>
 </urlset>
