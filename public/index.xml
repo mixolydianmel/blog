@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Melody&#39;s Musings</title>
+    <link>http://localhost:1313/blog/</link>
+    <description>Recent content on Melody&#39;s Musings</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 20 Jun 2024 16:15:13 -0400</lastBuildDate>
+    <atom:link href="http://localhost:1313/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About the Author</title>
+      <link>http://localhost:1313/blog/posts/about-the-author/</link>
+      <pubDate>Thu, 20 Jun 2024 16:15:13 -0400</pubDate>
+      <guid>http://localhost:1313/blog/posts/about-the-author/</guid>
+      <description>Who am I? # My name is Melody, and I use she/her pronouns. Pleased to know you&amp;rsquo;re here!&#xA;What do I do? # I have two great passions in life: computing and music.&#xA;In terms of the former, I&amp;rsquo;ve been programming as a hobby for over a decade, and even have some professional experience under my belt! Throughout my hobby programming I&amp;rsquo;ve concentrated mostly on games, and especially within the last four-or-so years on computer graphics and rendering technology.</description>
+    </item>
+  </channel>
+</rss>
