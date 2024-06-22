@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Computing on Melody&#39;s Musings</title>
+    <link>https://mixolydianmel.github.io/blog/categories/computing/</link>
+    <description>Recent content in Computing on Melody&#39;s Musings</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 22 Jun 2024 17:04:56 -0400</lastBuildDate>
+    <atom:link href="https://mixolydianmel.github.io/blog/categories/computing/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Absolute State of Document Markup</title>
+      <link>https://mixolydianmel.github.io/blog/posts/markup/</link>
+      <pubDate>Sat, 22 Jun 2024 17:04:56 -0400</pubDate>
+      <guid>https://mixolydianmel.github.io/blog/posts/markup/</guid>
+      <description>Inspired by this talk by Tony Ibbs, as well as my own boiling rage.&#xA;Notice something wrong? Open an issue.&#xA;I. What? # That&amp;rsquo;s a short question with an unfortunately long answer. Let&amp;rsquo;s start at the beginning.&#xA;What even is document markup? # Fundamentally, document markup is a way to encode text. That&amp;rsquo;s it.&#xA;This implies that some more complex representation of text is producible from a simpler,(1) (1)Keep this in mind.</description>
+    </item>
+  </channel>
+</rss>

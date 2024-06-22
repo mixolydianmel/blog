@@ -1,10 +1,12 @@
 +++
-title = 'If another person suggests using markdown I will roundhouse kick them into the sun.'
+title = 'The Absolute State of Document Markup'
 author = 'Melody Henrich'
 date = 2024-06-22T17:04:56-04:00
 draft = false
 meta = true
 math = true
+description = "The unbridled rage of someone who's had enough."
+categories = ["markup", "rants", "computing"]
 +++
 
 _Inspired by [this talk](https://www.youtube.com/watch?v=P-7hwjocEpM) by Tony
