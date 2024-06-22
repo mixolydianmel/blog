@@ -33,12 +33,12 @@ time.
 
 Glad you asked! This site uses [a hugo theme](https://github.com/loikein/hugo-tufte) inspired by [tufte-css](https://edwardtufte.github.io/tufte-css/). To quote the latter,
 
-> Tufte CSS provides tools to style web articles using the ideas demonstrated
-> by Edward Tufte’s books and handouts. Tufte’s style is known for its
-> simplicity, extensive use of sidenotes, tight integration of graphics with
-> text, and carefully chosen typography.
->
-> --- Tufte CSS Official Site
+{{<blockquote author="Dave Liepmann" cite="https://edwardtufte.github.io/tufte-css/">}}
+Tufte CSS provides tools to style web articles using the ideas demonstrated
+by Edward Tufte’s books and handouts. Tufte’s style is known for its
+simplicity, extensive use of sidenotes, tight integration of graphics with
+text, and carefully chosen typography.
+{{</blockquote>}}
 
 ## Questions?
 

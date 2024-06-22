@@ -3,5 +3,8 @@
 }:
 pkgs.mkShell {
   name = "hugo-devshell";
-  nativeBuildInputs = with pkgs; [ hugo ];
+  nativeBuildInputs = with pkgs; [
+    hugo
+    proselint
+  ];
 }

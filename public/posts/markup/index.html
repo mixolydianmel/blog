@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html lang="en-us"><head><script src="/blog/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=blog/livereload" data-no-instant defer></script>
+<title>If another person suggests using markdown I will roundhouse kick them into the sun. - Melody&#39;s Musings</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description"
+    content="Inspired by this talk by Tony Ibbs, as well as my own boiling rage.
+Notice something wrong? Open an issue.
+I. What? # That&rsquo;s a short question with an unfortunately long answer. Let&rsquo;s start at the beginning.
+What even is document markup? # Fundamentally, document markup is a way to encode text. That&rsquo;s it.
+This implies that some more complex representation of text is producible from a simpler,(1) (1)Keep this in mind. ">
+<link rel="canonical" href="http://localhost:1313/blog/posts/markup/" />
+
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+
+
+
+
+
+
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="preload" as="style"
+      href="https://fonts.googleapis.com/css?family=Noto+Serif+SC|Noto+Emoji&display=swap" />
+<link rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Noto+Serif+SC|Noto+Emoji&display=swap"
+      media="print" onload="this.media='all'" />
+<noscript>
+<link rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Noto+Serif+SC&display=swap" />
+</noscript>
+
+
+
+
+
+
+<link rel="stylesheet" href="/blog/css/hugo-tufte.min.css">
+
+
+
+<link rel="stylesheet" href="/blog/css/hugo-tufte-options.min.css">
+
+<link rel="stylesheet" href="/css/hugo-tufte-override.css">
+
+</head>
+<body>
+
+
+<article id="main">
+  <section>
+<h1 class="content-title">If another person suggests using markdown I will roundhouse kick them into the sun.&nbsp;:: Draft</h1><span class="content-meta"><p class="author">Melody Henrich</p><p class="date">2024-06-22</p><span>17 min read&nbsp;</span></span></section>
+
+  
+
+  <section><p><em>Inspired by <a href="https://www.youtube.com/watch?v=P-7hwjocEpM">this talk</a> by Tony
+Ibbs, as well as my own boiling rage.</em></p>
+<p><em>Notice something wrong? Open an <a href="https://github.com/mixolydianmel/blog/issues">issue</a>.</em></p>
+<h1 id="i-what">
+I. What?
+<a href="#i-what" class="heading-anchor">#</a>
+</h1>
+<p><span class="newthought">That&rsquo;s a short question</span>
+ with an
+unfortunately long answer. Let&rsquo;s start at the beginning.</p>
+<h2 id="what-even-is-document-markup">
+What even is document markup?
+<a href="#what-even-is-document-markup" class="heading-anchor">#</a>
+</h2>
+<p><span class="newthought">Fundamentally,</span>
+ document markup is a way to
+encode text. That&rsquo;s it.</p>
+<p>This implies that some <em>more complex</em> representation of text is producible from
+a <em>simpler</em>,<label for="sidenote-1" class="margin-toggle sidenote-number">(1)</label>
+<input type="checkbox" id="sidenote-1" class="margin-toggle"/>
+<span class="sidenote">
+<span class="sidenote-number">(1)</span>Keep this in mind. It <em>will</em> come up
+later.
+</span>
+ encoded version. It&rsquo;s a simple idea, yet quite effective;
+input something short and simple, get something long and complicated. It&rsquo;s
+really not hard to see why something that fulfills that promise would be
+useful, after all most human technology since simple machines has been used to
+turn a little input into a lot of output. In the digital age, however, document
+markup mostly refers to / is often conflated with <em>Digital Typesetting</em>, which
+is the process of laying out text on a page in a specified way. Most modern
+digital typesetting is done in one of two ways:<label for="marginnote-1" class="margin-toggle marginnote-ind">📎</label>
+<input type="checkbox" id="marginnote-1" class="margin-toggle"/>
+<span class="marginnote">
+If you&rsquo;ve
+already heard of both of these, you won&rsquo;t miss much if you skip to the next
+section, though there is some context in here that&rsquo;s important for
+later.
+</span>
+</p>
+<ol>
+<li>WYSIWYG</li>
+<li>Markup Languages</li>
+</ol>
+<p>If you&rsquo;ve ever used Microsoft Word, Google Docs, or (God forbid) any stock
+notepad software that came with your computer, congrats, you&rsquo;ve used a
+WYSIWYG editor. WYSIWYG, besides standing for &ldquo;What You See Is What You Get,&rdquo;
+is an incredible acronym purely on the basis of
+pronunciation.<label for="sidenote-2" class="margin-toggle sidenote-number">(2)</label>
+<input type="checkbox" id="sidenote-2" class="margin-toggle"/>
+<span class="sidenote">
+<span class="sidenote-number">(2)</span>Pronounced &ldquo;whizzy wig&rdquo;, &ldquo;whiz-e-wig&rdquo;, or &ldquo;mostly
+bloatware.&rdquo;
+</span>
+ That said, it is also the most common and most
+frustrating way to try to typeset a document that has formatting more advanced
+than a Web-1.0 government website.<label for="marginnote-2" class="margin-toggle marginnote-ind">📎</label>
+<input type="checkbox" id="marginnote-2" class="margin-toggle"/>
+<span class="marginnote">
+For reference, see <a href="https://starchild.gsfc.nasa.gov/docs/StarChild/solar_system_level1/solar_system.html">this NASA
+website</a>
+designed by someone with incredible taste in wallpaper.
+</span>
+These
+editors do ultimately have their place, since their visual nature <em>does</em> make
+them a good tool for typesetting simple documents. If you&rsquo;ve ever tried to do
+something more complicated, though, you&rsquo;ve likely run into one of their many
+limitations.<label for="sidenote-3" class="margin-toggle sidenote-number">(3)</label>
+<input type="checkbox" id="sidenote-3" class="margin-toggle"/>
+<span class="sidenote">
+<span class="sidenote-number">(3)</span>E.g. getting an image to align itself to the page
+properly within a footer in Google Docs. Hell on earth.
+</span>
+ This is
+where our second method of typesetting comes in.</p>
+<p>Document markup langauges are sometimes defined as &ldquo;nerd shit.&rdquo; Despite this
+reputation, document markup languages continue to be used by regular folks and
+ultra-poweruser-typesetting nerds alike due to the sheer power they present to
+the user. Ever since the advent of the typewriter, writers have been using
+document markup to do things like denote headings, emphasize text, and incur my
+wrath by adding two spaces after each period in an email. This is known as
+<em>semantic markup</em>, where the marks denote the <strong>meaning</strong> of the text. For
+example, on typewriters, headings were often <u>underlined</u> to denote their
+importance.</p>
+<p>The other main type of markup language is <em>presentational</em> markup, where the
+marks denote how the text will be <strong>presented</strong>. A common contemporary example
+is the common <code>*</code>emphasis<code>*</code><label for="sidenote-4" class="margin-toggle sidenote-number">(4)</label>
+<input type="checkbox" id="sidenote-4" class="margin-toggle"/>
+<span class="sidenote">
+<span class="sidenote-number">(4)</span>Also notated <code>/</code>emphasis<code>/</code>,
+<code>_</code>emphasis<code>_</code>, or &ldquo;emphasis&rdquo; if you somehow still haven&rsquo;t moved on from
+typewriters.
+</span>
+ formatting seen on some social media sites and chat
+apps, which denotes that the text should be <em>italicized</em>, or at least that the
+reader should imagine it as such. While pesentational and semantic markup are
+different things, most markup languages incorporate elements of both.</p>
+<p>Alright, now we can finally move on to some examples. I would be more excited,
+but I&rsquo;m going to dunk on most of these later, so don&rsquo;t take any of my
+explanation of what these markups languages are as an endorsement.</p>
+<h2 id="the-big-lang-theory">
+The Big Lang Theory
+<a href="#the-big-lang-theory" class="heading-anchor">#</a>
+</h2>
+<p><span class="newthought">For ages, humans have searched</span>
+ for the fastest
+and most accurate way to represent their thoughts to one another, and have
+mostly found people who don&rsquo;t care that much, dude. Eventually, though,
+computers were invented, and suddenly everyone cared a <em>lot</em> about speed and
+efficacy of written communication. Some of the earliest markup languages were
+developed at computing innovation hotspots like Bell Labs and
+IBM,<label for="marginnote-3" class="margin-toggle marginnote-ind">📎</label>
+<input type="checkbox" id="marginnote-3" class="margin-toggle"/>
+<span class="marginnote">
+I&rsquo;m sorry markup nerds but there simply is not enough space
+on my hard drive to cover the ancestral forest that is GML.
+</span>
+
+and the DNA of such ancestral typesetting tongues can still be seen in commonly
+used markup today.</p>
+<h2 id="well-it-all-started-that-one-summer-in-1964">
+Well, it all started that one summer in 1964…
+<a href="#well-it-all-started-that-one-summer-in-1964" class="heading-anchor">#</a>
+</h2>
+<p><span class="newthought"><code>RUNOFF</code> is one such language,</span>
+ which would
+later see adaptations <code>roff</code>, <code>troff</code>, <code>nroff</code>, and
+<code>groff</code>.<label for="sidenote-5" class="margin-toggle sidenote-number">(5)</label>
+<input type="checkbox" id="sidenote-5" class="margin-toggle"/>
+<span class="sidenote">
+<span class="sidenote-number">(5)</span>&ldquo;Runoff (adaptation)&rdquo;, &ldquo;typeset runoff&rdquo;, &ldquo;new roff&rdquo;, and
+&ldquo;GNU runoff&rdquo; respectively.
+</span>
+ These programs were some of the
+earliest markup languages that would allow users to do both semantic and
+presentational markup in a concise and understandable way. These markup
+standards (especially <code>groff</code>) remain some of the most powerful tools for
+digital typesetting there are, due to the fine-grained control they grant the
+user. Modern usage often involves <em>macro packages</em>,<label for="sidenote-6" class="margin-toggle sidenote-number">(6)</label>
+<input type="checkbox" id="sidenote-6" class="margin-toggle"/>
+<span class="sidenote">
+<span class="sidenote-number">(6)</span><cite>See <a href="https://www.gnu.org/software/groff/manual/groff.html#Macro-Package-Intro">the
+groff manual page for macro
+packages</a></cite>
+</span>
+
+which are condensed control sequences that expand to larger expressions meant
+to <strong>make doing more complex things easier on the user</strong>. These programs are
+almost exclusively invoked at the command line, which is a bit of a limitation
+considering anyone using the command line must, on principle, be a huge
+nerd.<label for="marginnote-4" class="margin-toggle marginnote-ind">📎</label>
+<input type="checkbox" id="marginnote-4" class="margin-toggle"/>
+<span class="marginnote">
+(/s)
+</span>
+</p>
+<p>Enter Donald Knuth<label for="marginnote-5" class="margin-toggle marginnote-ind">📎</label>
+<input type="checkbox" id="marginnote-5" class="margin-toggle"/>
+<span class="marginnote">
+If you somehow still haven&rsquo;t heard of Donald
+Knuth and you&rsquo;re still reading this, you&rsquo;d surely be fascinated by him and his
+work.
+</span>
+ and Leslie Lamport, the developers behind the <code>$\TeX$</code>
+language and its <code>$\LaTeX$</code> macro package respectively. <code>$\TeX$</code> is an
+incredibly powerful typesetting language, though much like <code>roff</code>, it&rsquo;s far too
+verbose. Much more frequently used is <code>$\LaTeX$</code>, a macro package which
+abstracts a lot of that complexity while retaining that fine-grained control
+that makes a markup language so powerful. <code>$\LaTeX$</code> is famous for its
+beautiful and elegant equations, and since its initial development in 1985 has
+remained the gold standard for academic writing and math typesetting. Outside
+of academic contexts, however, the syntax of <code>$\TeX$</code>-based documents can be
+cumbersome and <em>still</em> overly verbose, especially for things like
+documentation, blogging, or sending memos to your co-workers that nobody will
+ever read.</p>
+<h2 id="ok-but-what-are-normal-people-using-today">
+Ok, but what are normal people using today?
+<a href="#ok-but-what-are-normal-people-using-today" class="heading-anchor">#</a>
+</h2>
+<p><span class="newthought">Markdown is agreed upon</span>
+ as a standard in the
+same way early scientists agreed a meter is roughly <em>this</em> big. Still, it has
+become one of the most ubiquitous forms of document markup in the modern
+digital landscape, used by practically everyone and their
+octocat.<label for="sidenote-7" class="margin-toggle sidenote-number">(7)</label>
+<input type="checkbox" id="sidenote-7" class="margin-toggle"/>
+<span class="sidenote">
+<span class="sidenote-number">(7)</span><cite>See the <a href="https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax">GitHub flavored markdown
+&ldquo;standard&rdquo;</a>.</cite>
+</span>
+
+Markdown is what Wikipedia calls a &ldquo;lightweight&rdquo; markup language, and it shows
+in its syntax. At its core, markdown is really just prose decorated with some
+syntax for headings, different text styles, and some other things like links
+and lists. Built from the ground-up to convert well to HTML, markdown lends
+itself well to use cases like online documentation and
+blogging,<label for="marginnote-6" class="margin-toggle marginnote-ind">📎</label>
+<input type="checkbox" id="marginnote-6" class="margin-toggle"/>
+<span class="marginnote">
+Much to my chagrin, this page is formatted in
+markdown.
+</span>
+ both of which benefit massively from its light
+syntax. It even <del>forces</del> lets you embed HTML. Awesome…</p>
+<p>For those more focused on the physical and outisde the online, AsciiDoc is
+another primary choice that converts well to PDF, the chosen file format for
+most markup languages&rsquo; exports. Boasting a similarly lightweight syntax,
+AsciiDoc also includes a few more tools for things like math, callout
+blocks,<label for="sidenote-8" class="margin-toggle sidenote-number">(8)</label>
+<input type="checkbox" id="sidenote-8" class="margin-toggle"/>
+<span class="sidenote">
+<span class="sidenote-number">(8)</span>Also called &ldquo;admonitions&rdquo; or sometimes
+&ldquo;condescending&rdquo;
+</span>
+
+and document metadata.<label for="marginnote-7" class="margin-toggle marginnote-ind">📎</label>
+<input type="checkbox" id="marginnote-7" class="margin-toggle"/>
+<span class="marginnote">
+&ldquo;But markdown has support fo-&rdquo; NOPE. Read
+on, find out.
+</span>
+ AsciiDoc is similarly lightweight, and focuses
+on being easy to write using simple ASCII characters, making it ideal for doing
+things like taking quick notes for later cleaning and export, or formatting
+those aforementioned perpetually unread memos.</p>
+<p>One of the great benefits of these newer, lighter-weight standards is their
+lack of independence on environment. You can write markdown and AsciiDoc in
+almost any editor on almost any platform, whereas something like <code>groff</code> is
+tough to get working on a non-unix system, and <code>$\LaTeX$</code> requires boatloads of
+tooling to make it bearable to write. These key characteristics of ease of use
+and compatability make these languages shine in a modern context, especially
+when you ignore how completely worthless they are.<label for="marginnote-8" class="margin-toggle marginnote-ind">📎</label>
+<input type="checkbox" id="marginnote-8" class="margin-toggle"/>
+<span class="marginnote">
+Out of all of
+them, though, markdown is definitely the worst.
+</span>
+</p>
+<p>Let&rsquo;s talk about that.</p>
+<h1 id="ii-how">
+II. How?
+<a href="#ii-how" class="heading-anchor">#</a>
+</h1>
+<blockquote>
+<p>WARNING: The following section contains the enraged ramblings of someone who
+cares far too much. Proceed with caution and several grains of salt.</p>
+</blockquote>
+<h2 id="oh-come-on-how-bad-can-it-really-be">
+Oh come on, how bad can it really be?
+<a href="#oh-come-on-how-bad-can-it-really-be" class="heading-anchor">#</a>
+</h2>
+<p><span class="newthought">You&rsquo;re right,</span>
+ I should show you some context.
+I&rsquo;ll be covering a few different areas I perceive to be problems in the modern
+markup menagerie: Syntax, Ecosystem, and Philosophy.<label for="marginnote-9" class="margin-toggle marginnote-ind">📎</label>
+<input type="checkbox" id="marginnote-9" class="margin-toggle"/>
+<span class="marginnote">
+These are
+by no means meant to be a complete metric of the value/efficacy of a language,
+but they&rsquo;re useful to talk about in this context.
+</span>
+</p>
+<h2 id="syntax">
+Syntax
+<a href="#syntax" class="heading-anchor">#</a>
+</h2>
+<p><span class="newthought">Considering these languages</span>
+ have been around
+since the 1960s, it would be reasonable to assume we&rsquo;ve settled into a standard
+that at least makes it easy to write things. Like, there <em>has</em> to be an easy
+industry-standard way to write academic papers by now, right? Looking at the
+aforementioned academic standard <code>$\LaTeX$</code>, we get syntax like this:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-latex" data-lang="latex"><span class="line"><span class="cl"><span class="k">\documentclass</span><span class="nb">{</span>article<span class="nb">}</span>[some-specs]
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">\usepackage</span><span class="nb">{</span>package-001<span class="nb">}</span>
+</span></span><span class="line"><span class="cl">...
+</span></span><span class="line"><span class="cl"><span class="k">\usepackage</span><span class="nb">{</span>package-999<span class="nb">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">\title</span><span class="nb">{</span>A Title<span class="nb">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">\author</span><span class="nb">{</span>A Sleep-Deprived PhD Student<span class="nb">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">\date</span><span class="nb">{}</span> <span class="c">% &lt;- You don&#39;t even need to put anything in there
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>
+</span></span><span class="line"><span class="cl"><span class="k">\begin</span><span class="nb">{</span>document<span class="nb">}</span>
+</span></span><span class="line"><span class="cl">    This is a paragraph.
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">\begin</span><span class="nb">{</span>tabular<span class="nb">}{</span>c|c|c<span class="nb">}</span>
+</span></span><span class="line"><span class="cl">        Coffee Type <span class="nb">&amp;</span> Price (per pound) <span class="nb">&amp;</span> Your Rating <span class="k">\\</span>
+</span></span><span class="line"><span class="cl">        <span class="k">\hline</span>
+</span></span><span class="line"><span class="cl">        Arabica     <span class="nb">&amp;</span> <span class="k">\$</span>8               <span class="nb">&amp;</span> 5           <span class="k">\\</span>
+</span></span><span class="line"><span class="cl">        Liberica    <span class="nb">&amp;</span> <span class="k">\$</span>10              <span class="nb">&amp;</span> 7           <span class="k">\\</span>
+</span></span><span class="line"><span class="cl">        Excelser    <span class="nb">&amp;</span> <span class="k">\$</span>12              <span class="nb">&amp;</span> 8           <span class="k">\\</span>
+</span></span><span class="line"><span class="cl">        Robusta     <span class="nb">&amp;</span> <span class="k">\$</span>10              <span class="nb">&amp;</span> 10          <span class="k">\\</span>
+</span></span><span class="line"><span class="cl">    <span class="k">\end</span><span class="nb">{</span>tabular<span class="nb">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    Say we have some set <span class="s">$</span><span class="nb">S_k</span><span class="s">$</span> that contains all solutions to a subproblem <span class="s">$</span><span class="nb">k</span><span class="s">$</span> of <span class="s">$</span><span class="nb">S</span><span class="s">$</span>.
+</span></span><span class="line"><span class="cl">    Let <span class="s">$</span><span class="nb">A_k</span><span class="s">$</span> be the set of all <span class="k">\textem</span><span class="nb">{</span>optimal<span class="nb">}</span> solutions to <span class="s">$</span><span class="nb">S_k</span><span class="s">$</span>.
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    Here&#39;s the quadratic equation:
+</span></span><span class="line"><span class="cl">    <span class="sb">\[</span><span class="nb">
+</span></span></span><span class="line"><span class="cl"><span class="nb">        x</span><span class="o">=</span><span class="nv">\frac</span><span class="nb">{</span><span class="o">-</span><span class="nb">b</span><span class="nv">\pm\sqrt</span><span class="nb">{b^</span><span class="m">2</span><span class="o">-</span><span class="m">4</span><span class="nb">ac}}{</span><span class="m">2</span><span class="nb">a}
+</span></span></span><span class="line"><span class="cl"><span class="nb">    </span><span class="s">\]</span>
+</span></span><span class="line"><span class="cl"><span class="k">\end</span><span class="nb">{</span>document<span class="nb">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Ok that&rsquo;s enough. <code>$\LaTeX$</code> syntax is what you get when someone asks &ldquo;hey how
+many backslashes do you want in your markup&rdquo; and the designers answer
+&ldquo;<strong>yes</strong>.&ldquo;<label for="marginnote-10" class="margin-toggle marginnote-ind">📎</label>
+<input type="checkbox" id="marginnote-10" class="margin-toggle"/>
+<span class="marginnote">
+If you think this is not a lot of backslashes, look
+up the <code>$\LaTeX$</code> source for some academic paper, and weep tears of
+regret.
+</span>
+ There&rsquo;s also no difference between a <em>variable</em> and a
+<em>function</em>, where things like <code>\hline</code> and <code>\title</code> look, at first glance,
+exactly the same. There is so, <em>so</em> much bloat in <code>$\LaTeX$</code> syntax that it
+almost <em>gets in the way</em> of writing things. On top of that, <code>\</code> is used as <em>an
+escape character</em>. That&rsquo;s <em>three things</em> now that the <code>\</code> might be doing.</p>
+<p>This is all to say nothing of the syntax for drawing
+pictures,<label for="sidenote-9" class="margin-toggle sidenote-number">(9)</label>
+<input type="checkbox" id="sidenote-9" class="margin-toggle"/>
+<span class="sidenote">
+<span class="sidenote-number">(9)</span>Which requires a package called <code>TiKz</code>, a name that
+makes me shudder each time I see it.
+</span>
+ which is
+probably enough to make the <code>UNIX</code>-brained creators of the
+<code>pic</code><label for="sidenote-10" class="margin-toggle sidenote-number">(10)</label>
+<input type="checkbox" id="sidenote-10" class="margin-toggle"/>
+<span class="sidenote">
+<span class="sidenote-number">(10)</span>It&rsquo;s truly <a href="https://meresh.com/files/troff/Making%20Pictures%20with%20GNU%20PIC,%20Eric%20S.%20Raymond.pdf">so
+simple</a>.
+</span>
+
+preprocessor
+for <code>groff</code> turn inside-out with despair.</p>
+<p>That&rsquo;s not to say <code>groff</code> itself is any better.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-groff" data-lang="groff"><span class="line"><span class="cl">.<span class="k">TL</span>
+</span></span><span class="line"><span class="cl">Some title
+</span></span><span class="line"><span class="cl">.<span class="k">AU</span>
+</span></span><span class="line"><span class="cl">Some nerd (author)
+</span></span><span class="line"><span class="cl">.<span class="k">AI</span>
+</span></span><span class="line"><span class="cl">Some university
+</span></span><span class="line"><span class="cl">.<span class="k">AB</span>
+</span></span><span class="line"><span class="cl">Here is a brief abstract.
+</span></span><span class="line"><span class="cl">.<span class="k">AE</span>
+</span></span><span class="line"><span class="cl">.<span class="k">PP</span>
+</span></span><span class="line"><span class="cl">This is a paragraph of text. It&#39;s indented.
+</span></span><span class="line"><span class="cl">.<span class="k">LP</span>
+</span></span><span class="line"><span class="cl">Here is an unindented paragraph, followed by
+</span></span><span class="line"><span class="cl">the quadratic equation.
+</span></span><span class="line"><span class="cl">.<span class="k">EQ</span>
+</span></span><span class="line"><span class="cl">x = {-b +- sqrt{b sup 2 - 4 a c}} over { 2a }
+</span></span><span class="line"><span class="cl">.<span class="k">EN</span>
+</span></span><span class="line"><span class="cl">This sentence has
+</span></span><span class="line"><span class="cl">.<span class="k">B</span> <span class="s">bold</span>
+</span></span><span class="line"><span class="cl">text.
+</span></span><span class="line"><span class="cl">.<span class="k">IP</span> <span class="se">\(bu</span>
+</span></span><span class="line"><span class="cl">This is a bullet item
+</span></span><span class="line"><span class="cl">.<span class="k">IP</span> <span class="se">\(bu</span>
+</span></span><span class="line"><span class="cl">This is another bullet item
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>I&rsquo;ve used <code>groff</code> quite extensively, and have even written my own macros for
+it. It&rsquo;s one of my favorite markup languages of all
+time.<label for="marginnote-11" class="margin-toggle marginnote-ind">📎</label>
+<input type="checkbox" id="marginnote-11" class="margin-toggle"/>
+<span class="marginnote">
+Despite all the weirdness of Luke Smith, I am glad he
+introduced people to <code>groff</code>.
+</span>
+ That doesn&rsquo;t mean I&rsquo;m not
+blinded by how many lines this example takes up. In its origins as an early
+text processing tool, <code>groff</code> chose to make each new command happen at the
+start of a line and prefixed with a period, which is actually a really good
+choice for people who want carpal tunnel in their right hand. Needless to say,
+it&rsquo;s archaic and doesn&rsquo;t see much use anymore.<label for="sidenote-11" class="margin-toggle sidenote-number">(11)</label>
+<input type="checkbox" id="sidenote-11" class="margin-toggle"/>
+<span class="sidenote">
+<span class="sidenote-number">(11)</span>That is, outside of
+writing <code>man</code> pages for linux users to pore through in their boundless free
+time.
+</span>
+</p>
+<p>Perhaps that means we&rsquo;ve already been saved by the lightweight markup languages
+of today! The most famous of them all, markdown, surely has us covered. Right?</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-md" data-lang="md"><span class="line"><span class="cl"><span class="k">1.</span> This is a list item numbered 1.
+</span></span><span class="line"><span class="cl"><span class="k">9.</span> This is a list item numbered 2.
+</span></span><span class="line"><span class="cl"><span class="k">0.</span> This is a list item numbered 3.
+</span></span><span class="line"><span class="cl">. This is just another line from number 3.
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">This is a paragraph.
+</span></span><span class="line"><span class="cl">This is the same paragraph.
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">This is a new paragraph.<span class="p">&lt;</span><span class="nt">br</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">This is the only way to break a new line
+</span></span><span class="line"><span class="cl">within a paragraph.
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">-</span> _this is italic_
+</span></span><span class="line"><span class="cl"><span class="k">-</span> *this is italic*
+</span></span><span class="line"><span class="cl"><span class="k">-</span> _*this is also italic*_
+</span></span><span class="line"><span class="cl"><span class="k">-</span> this text has in*tern*al emphasis
+</span></span><span class="line"><span class="cl"><span class="k">-</span> this text has e_tern_al suffering
+</span></span><span class="line"><span class="cl"><span class="k">-</span> <span class="p">&lt;</span><span class="nt">u</span><span class="p">&gt;</span>this text is underlined<span class="p">&lt;/</span><span class="nt">u</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">--- <span class="c">&lt;!-- horizontal rule --&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="s">```cpp
+</span></span></span><span class="line"><span class="cl"><span class="s"></span><span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&#34;This is code&#34;</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="s">```</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    This is also code
+</span></span><span class="line"><span class="cl"><span class="k">
+</span></span></span><span class="line"><span class="cl"><span class="k">&gt; </span><span class="ge">This is a blockquote
+</span></span></span><span class="line"><span class="cl"><span class="ge"></span>that continues like a paragraph
+</span></span><span class="line"><span class="cl"><span class="k">&gt; </span><span class="ge">continues with a delimiter again
+</span></span></span><span class="line"><span class="cl"><span class="ge"></span><span class="k">-</span> Then ends when it&#39;s a new block
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">This is an ![<span class="nt">image</span>](<span class="na">image.jpg</span>)
+</span></span><span class="line"><span class="cl">This is also an ![image]: image.jpg
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>The only way markdown&rsquo;s syntax is consistent is that it consistently misses the
+mark.<label for="marginnote-12" class="margin-toggle marginnote-ind">📎</label>
+<input type="checkbox" id="marginnote-12" class="margin-toggle"/>
+<span class="marginnote">
+I&rsquo;ve left out some syntax that is actually good for the
+sake of brevity.
+</span>
+ I mean come <em>on</em>, not only <em>can</em> you use raw
+HTML anywhere in the document, but in some cases you&rsquo;re <em>forced</em> to? This is
+inexcusable, nobody should be forced to write HTML.</p>
+<p>Aside from all the inconsistency within the actual document syntax, there&rsquo;s
+even more inconsistency between markdown&rsquo;s syntax <em>standards</em>!<label for="sidenote-12" class="margin-toggle sidenote-number">(12)</label>
+<input type="checkbox" id="sidenote-12" class="margin-toggle"/>
+<span class="sidenote">
+<span class="sidenote-number">(12)</span>The
+most common markdown standard,
+<a href="https://spec.commonmark.org/0.31.2/">CommonMark</a>, is extremely
+limited.
+</span>
+ Sometimes you can do ~strikethrough~, sometimes you
+can&rsquo;t. Sometimes you can $insert math inline$,<label for="marginnote-13" class="margin-toggle marginnote-ind">📎</label>
+<input type="checkbox" id="marginnote-13" class="margin-toggle"/>
+<span class="marginnote">
+I&rsquo;m aware that
+math formatting is done with other tools like <code>$\KaTeX$</code>. That is
+worse.
+</span>
+ sometimes you can&rsquo;t. Even when the syntax <em>isn&rsquo;t even
+in the final document</em> like in the case of metadata, you can&rsquo;t get a straight
+answer! Sometimes it&rsquo;s in YAML, sometimes it&rsquo;s in TOML, sometimes it&rsquo;s <em>not
+allowed at all</em>.</p>
+<p>Markdown enthusiasts<label for="sidenote-13" class="margin-toggle sidenote-number">(13)</label>
+<input type="checkbox" id="sidenote-13" class="margin-toggle"/>
+<span class="sidenote">
+<span class="sidenote-number">(13)</span>Read: masochists
+</span>
+ like to talk
+about <em>flavors</em> of markdown like it&rsquo;s some sort of buffet. There&rsquo;s <em>pandoc</em>
+flavored markdown, <em>github</em> flavored markdown, hell, there&rsquo;s even <em>R markdown</em>,
+which runs <code>R</code> code on your markdown file to statistically analyze how much
+time you&rsquo;ve wasted trying to figure out why your paragraph is
+monospaced.<label for="marginnote-14" class="margin-toggle marginnote-ind">📎</label>
+<input type="checkbox" id="marginnote-14" class="margin-toggle"/>
+<span class="marginnote">
+Not to mention that compiling your document takes
+absolute <em>ages</em> with R markdown.
+</span>
+ All of these different
+standards have different ways of doing things. Some support using <code>+</code> or <code>*</code>
+for bullet lists, some don&rsquo;t. Some support code blocks with language syntax
+highlighting, some don&rsquo;t.</p>
+<p>This wouldn&rsquo;t be such a problem if markdown wasn&rsquo;t the bona fide standard for
+modern document markup in the software world,<label for="marginnote-15" class="margin-toggle marginnote-ind">📎</label>
+<input type="checkbox" id="marginnote-15" class="margin-toggle"/>
+<span class="marginnote">
+I consider GitHub
+a gateway to markdown addiction, and even then most READMEs I&rsquo;ve seen contain a
+significant amount of HTML.
+</span>
+ and even outside of it in the
+blogging sphere. The reach of markdown is so vast that people have tacitly
+accepted these horrors for themselves, unaware of the sins they commit each
+time they start an italic delimiter with a &lsquo;*&rsquo;.</p>
+<p>This pattern is perpetuated through nearly all of the standards I&rsquo;ve come
+across in my search for the perfect markup language. I use markup languages
+mostly for notetaking and formatting handouts,<label for="marginnote-16" class="margin-toggle marginnote-ind">📎</label>
+<input type="checkbox" id="marginnote-16" class="margin-toggle"/>
+<span class="marginnote">
+I consider these
+to be relatively common use cases, given things like the (in)famous <a href="https://castel.dev/post/lecture-notes-1/">castel.dev
+post</a> and the existence of tools like
+vimwiki.
+</span>
+ which basically means I have to either:</p>
+<ol>
+<li>Write a billion macros in my editor to use something like <code>$\LaTeX$</code> or
+<code>groff</code>, or</li>
+<li>Settle for something like markdown or AsciiDoc that isn&rsquo;t quite powerful
+enough,</li>
+</ol>
+<p>and that just isn&rsquo;t acceptable to me.</p>
+<h2 id="ecosystem">
+Ecosystem
+<a href="#ecosystem" class="heading-anchor">#</a>
+</h2>
+<p><span class="newthought">A good markup language</span>
+ has good tooling for
+using it. Whether it&rsquo;s turning the markup into a finished format or importing
+macros made by other users, a good ecosystem is a big part of what makes a
+markup language easy to use.</p>
+<p><code>groff</code>&rsquo;s ecosystem is archaic/nonexistent.<label for="marginnote-17" class="margin-toggle marginnote-ind">📎</label>
+<input type="checkbox" id="marginnote-17" class="margin-toggle"/>
+<span class="marginnote">
+Of all of these, I
+think <code>groff</code> actually does it best with its <code>UNIX</code>-y use style, but the
+documentation is so <em>scattered</em> and <em>in man pages</em> that it negates that
+entirely.
+</span>
+ Modern <code>$\LaTeX$</code> opts to use about a billion
+packages distributed in about a dozen ways to address the needs of users. I&rsquo;ve
+seen many a <code>$\LaTeX$</code> document where the package imports take up nearly as
+much space as the actual document content. AsciiDoc&rsquo;s ecosystem is pretty good,
+but severly lacking in extensibility. Markdown&rsquo;s ecosystem is not just bad,
+it&rsquo;s <em>everywhere</em>.<label for="marginnote-18" class="margin-toggle marginnote-ind">📎</label>
+<input type="checkbox" id="marginnote-18" class="margin-toggle"/>
+<span class="marginnote">
+I consider markdown to be the asbestos of the
+markup langauge world. It&rsquo;s super harmful and also <em>in
+everything</em>.
+</span>
+ Every editor instance has a different set of
+things you can use with it, and the web tech rendering your markdown is usually
+what determines what you can/can&rsquo;t use. It shouldn&rsquo;t be that hard to create a
+good ecosystem for a markup language. Just <em>having</em> an official way to use it
+is even a high bar for modern markup languages. Having one that also doesn&rsquo;t
+force the user to use it is even rarer.</p>
+<p>Possibly the most frustrating aspect of modern markup languages is their severe
+lack of use. These things should be ubiquitous like WYSIWYG. People shouldn&rsquo;t
+default to taking notes in Google Docs, and yet here we are. I know not of a
+markup language with an ecosystem good enough and a syntax simple enough for
+ordinary people to just get on board and use it.<label for="sidenote-14" class="margin-toggle sidenote-number">(14)</label>
+<input type="checkbox" id="sidenote-14" class="margin-toggle"/>
+<span class="sidenote">
+<span class="sidenote-number">(14)</span>There used to be
+one, but that one was called <em>shorthand</em> and requires
+handwriting.
+</span>
+ The power of markup is lost on the general
+population because of insidious flaws in our standards.</p>
+<h2 id="philosphy">
+Philosphy
+<a href="#philosphy" class="heading-anchor">#</a>
+</h2>
+<p><span class="newthought">Where does that</span>
+ leave us? The philosophy of
+most markup languages is either that &ldquo;users should be able to get the maximum
+output from minimum markup&rdquo; or &ldquo;wrong.&rdquo; Even most of what we&rsquo;ve been talking
+about misses the real point; formatting documents into digital formats is
+generally <em>difficult</em>, and markup languages are meant to make it
+<em>easy</em>.<label for="marginnote-19" class="margin-toggle marginnote-ind">📎</label>
+<input type="checkbox" id="marginnote-19" class="margin-toggle"/>
+<span class="marginnote">
+Remember that first sidenote? Yeah. We&rsquo;re
+back.
+</span>
+ Even in the discussion of syntax earlier, you, the
+reader, <em>implicitly</em> had to learn what the syntax <em>was</em> and what it <em>meant</em> for
+any of that conversation to be relevant and comprehensible.</p>
+<p>The flaws in modern markup philosophy become even more obvious when we look at
+what these languages are actually <em>for</em>. Markdown is really <em>for</em> writing HTML
+faster, which it does super effectively by making you write HTML anyway.
+<code>$\LaTeX$</code> is really <em>for</em> extremely use-case specific scientific writing, and
+while it has flaws, it does that reasonably well. AsciiDoc is <em>for</em>
+writing low stakes technical content,<label for="sidenote-15" class="margin-toggle sidenote-number">(15)</label>
+<input type="checkbox" id="sidenote-15" class="margin-toggle"/>
+<span class="sidenote">
+<span class="sidenote-number">(15)</span><a href="https://docs.asciidoctor.org/">Its
+website</a> even says as much.
+</span>
+ and
+excels at that.</p>
+<p>The biggest problem with modern markup is that <strong>all of these languages are
+pitched as whole solutions for every circumstance by people who don&rsquo;t know
+better</strong>.<label for="marginnote-20" class="margin-toggle marginnote-ind">📎</label>
+<input type="checkbox" id="marginnote-20" class="margin-toggle"/>
+<span class="marginnote">
+Yes, I&rsquo;ve tried org mode, vimwiki, neorg, and dozens
+of other formats/methods. I dislike all of them.
+</span>
+ These
+languages are tools, and each has their use case, but there is no sonic
+screwdriver, there is no Batman&rsquo;s belt, and there is no God, only the winding
+threads of the cosmos pulling us closer and closer to writing HTML by hand.</p>
+<p>Don&rsquo;t get me wrong; the problems with syntax and ecosystem we&rsquo;ve discussed are
+<em>very</em> real and <em>very</em> frustrating for people like me who can&rsquo;t handwrite
+things.<label for="marginnote-21" class="margin-toggle marginnote-ind">📎</label>
+<input type="checkbox" id="marginnote-21" class="margin-toggle"/>
+<span class="marginnote">
+Curse you, wrist issues and sensitivity to the texture
+of paper!
+</span>
+ The problem plaguing modern markup that saddens me
+most, though, is that of the missing middle. There is next to nothing in the
+gap between something like Markdown and something like <code>$\LaTeX$</code>, between the
+usability of the lightweight and the power of the academic.</p>
+<h1 id="iii-what-now">
+III. What now?
+<a href="#iii-what-now" class="heading-anchor">#</a>
+</h1>
+<p>Thankfully, other people have seen these problems and chosen to do something
+about them.<label for="sidenote-16" class="margin-toggle sidenote-number">(16)</label>
+<input type="checkbox" id="sidenote-16" class="margin-toggle"/>
+<span class="sidenote">
+<span class="sidenote-number">(16)</span>There&rsquo;s an excellent up-and-coming language called
+<a href="https://typst.app/">Typst</a> that addresses a lot of what I&rsquo;ve talked about,
+though it&rsquo;s still not perfect.
+</span>
+ There is still, however, a long
+road ahead between where we are and getting to the platonic form of the perfect
+markup language.</p>
+<p>The thing that would help most right now is if more people really <em>understood</em>
+this problem. To do that, though, one must actually <em>use</em> a markup language. I
+highly encourage anyone who has read this far to pick up a markup langauge,
+even if it&rsquo;s markdown.<label for="marginnote-22" class="margin-toggle marginnote-ind">📎</label>
+<input type="checkbox" id="marginnote-22" class="margin-toggle"/>
+<span class="marginnote">
+Tools like
+<a href="https://obsidian.md/">Obsidian</a> and <a href="https://joplinapp.org/">Joplin</a> are user
+friendly and good at easing you into the workflow.
+</span>
+ Really any
+markup language will give you more power and velocity than Microsoft Word, just
+<em>please</em> stop using Word.</p>
+<p>Stop it. Save yourself.</p>
+<hr>
+<h2 id="end-notes">
+End notes
+<a href="#end-notes" class="heading-anchor">#</a>
+</h2>
+<ul>
+<li>I plan on doing some fun posts diving deeper into the syntax of some of the
+more offensive languages and rating them on different metrics for some
+lighthearted fun, so stay tuned for that.</li>
+<li>Despite their flaws, I&rsquo;ve used these languages extensively and plan to
+continue using them, especially Typst.</li>
+<li>The most annoying part of writing this by far was formatting each instance of
+<code>$\LaTeX$</code> properly.</li>
+</ul>
+</section>
+  <section><footer class="page-footer">
+<hr />
+
+<div class="previous-post" style="display:inline-block;">
+  
+  <a class="link-reverse" href="http://localhost:1313/blog/posts/markdown/?ref=footer">« Markdown</a>
+  
+</div>
+
+<div class="next-post", style="display:inline-block;float:right;">
+  
+</div>
+
+<ul class="page-footer-menu">
+  
+  
+  
+  
+  <li><a href="https://linkedin.com/in/mixolydianmel">LinkedIn</a></li>
+  
+
+  
+  <li><a href="https://github.com/mixolydianmel">GitHub</a></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><a href="https://www.instagram.com/mixolydianmel">Instagram</a></li>
+  
+
+  
+
+  
+
+  
+  
+  
+</ul>
+
+
+
+
+<div class="copyright">
+<p>
+  
+  Copyright 2024
+  
+</p>
+</div>
+
+
+</footer>
+</section>
+  <section><nav class="menu">
+    <ul>
+    
+        <li><a href="/blog/posts/about-the-author/">About</a></li>
+    
+        <li><a href="/blog/">Home</a></li>
+    
+        <li><a href="/blog/posts/">Posts</a></li>
+    
+        <li><a href="https://github.com/mixolydianmel/blog">Source Code</a></li>
+    
+    </ul>
+</nav>
+</section>
+</article>
+
+
+
+
+
+
+
+  <script>(function(){var e,t,n,s=document.getElementsByTagName("code");for(n=0;n<s.length;){if(t=s[n],t.parentNode.tagName!=="PRE"&&t.childElementCount===0&&!t.classList.contains("nolatex")&&(e=t.textContent,/^\$[^$]/.test(e)&&/[^$]\$$/.test(e)&&(e=e.replace(/^\$/,"\\(").replace(/\$$/,"\\)"),t.textContent=e),/^\\\((.|\s)+\\\)$/.test(e)||/^\\\[(.|\s)+\\\]$/.test(e)||/^\$(.|\s)+\$$/.test(e)||/^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(e))){t.outerHTML=t.innerHTML;continue}n++}})()</script>
+
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css" crossorigin="anonymous">
+<script defer src="//cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.js" crossorigin="anonymous"></script>
+<script defer src="//cdn.jsdelivr.net/npm/katex@0.16.4/dist/contrib/auto-render.min.js" crossorigin="anonymous"></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+            
+            
+            
+            
+            
+            
+            trust: (context) => ['\\htmlId', '\\href'].includes(context.command),
+            macros: {
+              "\\eqref": "\\href{###1}{(\\text{#1})}",
+              "\\ref": "\\href{###1}{\\text{#1}}",
+              "\\label": "\\htmlId{#1}{}"
+            }
+        });
+    });
+</script>
+
+
+
+</body>
+
+</html>

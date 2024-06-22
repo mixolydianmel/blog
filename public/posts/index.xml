@@ -2,17 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Melody&#39;s Musings</title>
-    <link>https://mixolydianmel.github.io/blog/posts/</link>
+    <link>http://localhost:1313/blog/posts/</link>
     <description>Recent content in Posts on Melody&#39;s Musings</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 20 Jun 2024 16:15:13 -0400</lastBuildDate>
-    <atom:link href="https://mixolydianmel.github.io/blog/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 22 Jun 2024 17:04:56 -0400</lastBuildDate>
+    <atom:link href="http://localhost:1313/blog/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>If another person suggests using markdown I will roundhouse kick them into the sun.</title>
+      <link>http://localhost:1313/blog/posts/markup/</link>
+      <pubDate>Sat, 22 Jun 2024 17:04:56 -0400</pubDate>
+      <guid>http://localhost:1313/blog/posts/markup/</guid>
+      <description>Inspired by this talk by Tony Ibbs, as well as my own boiling rage.&#xA;Notice something wrong? Open an issue.&#xA;I. What? # That&amp;rsquo;s a short question with an unfortunately long answer. Let&amp;rsquo;s start at the beginning.&#xA;What even is document markup? # Fundamentally, document markup is a way to encode text. That&amp;rsquo;s it.&#xA;This implies that some more complex representation of text is producible from a simpler,(1) (1)Keep this in mind.</description>
+    </item>
+    <item>
+      <title>Markdown</title>
+      <link>http://localhost:1313/blog/posts/markdown/</link>
+      <pubDate>Sat, 22 Jun 2024 13:38:13 -0400</pubDate>
+      <guid>http://localhost:1313/blog/posts/markdown/</guid>
+      <description>Markdown # Let&amp;rsquo;s start with basic inline formatting.📎 I will be skipping over irrelevant markup since this article needs to be readable before the heat death of the universe. 1 2 3 4 5 6 7 8 9 10 11 12 13 - *italic* - _italic_ - **bold** - __bold__ - _*italic?*_ - *_despair italicized_* - _**bold italic**_ - __*bold italic*__ - *in*ner it*al*ic - e_tern_al _suff_ering - `monospaced` - ~strikethrough~ - &amp;lt;u&amp;gt;underlined&amp;lt;/u&amp;gt; The question of why markdown allows four different ways to italicize something is a good one, but a better question would be &amp;ldquo;why are two of them using a character that straight up has no effect on the output?</description>
+    </item>
     <item>
       <title>About the Author</title>
-      <link>https://mixolydianmel.github.io/blog/posts/about-the-author/</link>
+      <link>http://localhost:1313/blog/posts/about-the-author/</link>
       <pubDate>Thu, 20 Jun 2024 16:15:13 -0400</pubDate>
-      <guid>https://mixolydianmel.github.io/blog/posts/about-the-author/</guid>
+      <guid>http://localhost:1313/blog/posts/about-the-author/</guid>
       <description>Who am I? # My name is Melody, and I use she/her pronouns. Pleased to know you&amp;rsquo;re here!&#xA;What do I do? # I have two great passions in life: computing and music.&#xA;In terms of the former, I&amp;rsquo;ve been programming as a hobby for over a decade, and even have some professional experience under my belt! Throughout my hobby programming I&amp;rsquo;ve concentrated mostly on games, and especially within the last four-or-so years on computer graphics and rendering technology.</description>
     </item>
   </channel>
