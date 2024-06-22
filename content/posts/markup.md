@@ -2,7 +2,7 @@
 title = 'If another person suggests using markdown I will roundhouse kick them into the sun.'
 author = 'Melody Henrich'
 date = 2024-06-22T17:04:56-04:00
-draft = true
+draft = false
 meta = true
 math = true
 +++
